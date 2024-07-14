@@ -1,0 +1,169 @@
+1.
+Question 1
+Which algorithms are used to predict continuous values?
+
+1 / 1 point
+
+✔️Regression Algorithms
+
+
+Classification Algorithms
+
+Correct
+Great job! Regression Algorithms are machine learning techniques for predicting continuous numerical values.
+
+2.
+Question 2
+Which of the following will print out the shape of the dataframe?
+
+1 / 1 point
+
+df.print_shape()
+
+
+df.shape()
+
+
+✔️df.shape
+
+
+df.print_shape
+
+Correct
+Ccorrect! Good job!
+
+3.
+Question 3
+
+What is the output of the code?
+
+123456
+import numpy as np
+
+X = [1,2,3]
+X = np.array(X)
+
+print(X.shape)
+
+1 / 1 point
+
+✔️(3,)
+
+
+(3,1)
+
+Correct
+Correct! Since it is a one-dimensional array with 4 elements, it would result in a shape of (3, ).
+
+4.
+Question 4
+What will this code generate?
+
+
+1
+sns.heatmap(life_expectancy_df.isnull(), yticklabels = False, cbar = False, cmap="Blues")
+
+1 / 1 point
+
+✔️Heatmap showing the locations of Null values
+
+Correct
+Correct! Great Job
+
+
+✔️A heatmap showing missing values 
+
+Correct
+Correct! Great Job
+
+
+✔️A Heatmap showing Missing values with no color bar 
+
+Correct
+Correct! Great Job
+
+
+A Heatmap showing missing values with color bar
+
+5.
+Question 5
+Simple Linear Regression is used to predict a value of one variable Y based on another variable X?
+
+1 / 1 point
+
+✔️True
+
+
+False
+
+Correct
+Great Job!
+
+6.
+Question 6
+What happen when you set fit_intercept = False in the code below?
+
+123
+regresssion_model_sklearn = LinearRegression(fit_intercept = True)
+regresssion_model_sklearn.fit(X_train, y_train)
+
+
+1 / 1 point
+
+✔️The straight line will pass through the origin
+
+Correct
+Correct! Great Job!
+
+
+✔️b = 0
+
+Correct
+Correct! Great Job!
+
+
+b !=0
+
+
+The straight line will be horizontal
+
+7.
+Question 7
+Which of the following KPIs can be used to assess regression models?
+
+1 / 1 point
+
+✔️RMSE
+
+Correct
+Correct! great job!
+
+
+✔️MSE
+
+Correct
+Correct! great job!
+
+
+✔️MAE
+
+Correct
+Correct! great job!
+
+
+MRMSE
+
+
+✔️r2
+
+Correct
+Correct! great job!
+
+
+✔️adjusted_r2
+
+Correct
+Correct! great job!
+
+
+Confusion Matrix
