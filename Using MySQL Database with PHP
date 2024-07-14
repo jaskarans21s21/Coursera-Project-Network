@@ -1,0 +1,151 @@
+Which of the following is an advantage of using PDO over MySQLi with PHP?
+
+1 / 1 point
+
+✔️PDO can be used for many other SQL-based databases and makes future migration easier. MySQLi can only be used with MySQL database.
+
+
+PDO is available for Windows, MacOS, and Linux and MySQLi is only available for Linux.
+
+
+PDO can retrieve data one row at a time and MySQLi cannot.
+
+
+PDO is written in object-oriented style and MySQLi is not.
+
+
+2.
+Question 2
+Using MySQLi, how do you close this database connection?
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+1 / 1 point
+
+$conn->closeConnection();
+
+
+mysqli_close($conn);
+
+$conn = null
+
+✔️$conn->close();
+
+
+3.
+Question 3
+Using PDO, how do you close this database connection?
+
+$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+
+1 / 1 point
+
+✔️$conn = null;
+
+$conn->disconnect();
+
+PDO::close($conn);
+
+$conn->close();
+
+
+4.
+Question 4
+Using the following PHP code to get one row at a time. How do we know when there is no more data in the result?
+
+$row = $sql->fetch(PDO::FETCH_ASSOC);
+
+1 / 1 point
+
+When it throws an End of Data exception
+
+
+When $row is an empty array
+
+
+When $row is PDO::END_OF_DATA
+
+
+✔️When $row is null
+
+
+5.
+Question 5
+If we used the following to retrieve the rows of a result set, how do we access the column member_id in the result set to be used inside a string?
+
+while($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+    // your code here
+}
+
+0 / 1 point
+
+$row[member_id]
+
+
+$row->column[member_id]
+
+
+$row(member_id)
+
+
+✔️$row['member_id']
+
+
+6.
+Question 6
+If we used the following to retrieve the rows of a result set, how do we access the column member_id in the result set to be used as a standalone expression?
+
+while($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+    // your code here
+}
+
+1 / 1 point
+
+$row[member_id]
+
+
+$row("member_id)
+
+
+✔️$row['member_id']
+
+
+$row(member_id)
+
+Correct
+Correct!
+
+7.
+Question 7
+Which of the following information is not needed in order to establish a database connection using either PDO or MySQLi?
+
+1 / 1 point
+
+The name of the database you are trying to connect to
+
+
+✔️The public key of the secure connection to the server.
+
+
+A user name that has permission to connect to the database
+
+
+The IP address or name of the database server you are trying to connect to
+
+8.
+Question 8
+Which of the following would be a good reason to fetch result one at a time instead of getting the entire set all at once?
+
+1 / 1 point
+
+When your SQL statement is very long
+
+
+When your data is mostly text
+
+
+✔️When you expect your result set to be large but only a portion of it will be used at a time
+
+
+When you need to display the entire result set on the same screen
+
